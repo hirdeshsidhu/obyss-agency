@@ -1,32 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    font-family: "plain light";
 }
-#main{
+
+#main {
     background-color: #151515;
     position: relative;
+    color: #fff;
 }
-#page1{
-    height: 100vh;
-    width: 100vw;
-}
-#loader{
+
+#loader {
     height: 100%;
     width: 100%;
     background-color: #050505;
     z-index: 999;
     position: fixed;
     color: white;
-    padding: 15vw 10vw; 
-    
+    padding: 15vw 10vw;
+
 }
-.line{
+
+.line {
     height: fit-content;
     overflow: hidden;
     display: flex;
@@ -34,29 +37,34 @@ html,body{
     align-items: center;
     gap: 4vw;
 }
-.line h1{
+
+.line h1 {
     font-weight: 500;
     font-size: 6.5vw;
     font-family: 'plain light';
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
-#line-part1{
+
+#line-part1 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1vw;
 }
-#line-part1 h5,#line-part1 h6{
+
+#line-part1 h5,
+#line-part1 h6 {
     font-size: 3vw;
     font-family: 'silk serif';
     font-weight: 100;
 }
 
-#line-part1 h5{
+#line-part1 h5 {
     width: 5vw;
     text-align: right;
 }
-#now{
+
+#now {
     margin-right: -5px;
     text-transform: uppercase;
     font-size: 5vw;
@@ -65,41 +73,118 @@ html,body{
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
 @keyframes anime {
-    0%{
+    0% {
         font-family: "plain light";
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         opacity: 1;
     }
-    10%{
+
+    10% {
         font-family: "plain light";
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         opacity: 0;
     }
-    30%{
+
+    30% {
         font-family: "silk serif";
         -webkit-text-stroke: 1px #fff;
         color: #fff;
         opacity: 1;
     }
-    40%{
+
+    40% {
         font-family: "silk serif";
         -webkit-text-stroke: 1px #fff;
         color: black;
         opacity: 0;
     }
-    60%{
+
+    60% {
         font-family: 'Times New Roman', Times, serif;
         -webkit-text-stroke: 1px solid #fff;
         color: white;
         opacity: 1;
     }
-    100%{
+
+    100% {
         font-family: "silk serif";
         -webkit-text-stroke: 1px #fff;
         color: black;
         opacity: 0;
     }
+}
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+#page1 #nav a {
+    color: #fff;
+    cursor: pointer;
+}
+
+#page1 #nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-left: 7vw;
+    padding-right: 5vw;
+}
+
+#nav-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#nav-part2 h4 {
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: "plain light";
+}
+
+.hero {
+    /* background-color: red; */
+    width: 73%;
+    margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999999999999999999;
+}
+
+.hero:nth-child(2) {
+    margin-top: 18vh;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 7vw;
+    line-height: 7vw;
+    text-transform: uppercase;
+}
+#crsr{
+    height:2.3vw;
+    width: 2.3vw;
+    border-radius: 50%;
+    border:1px solid #fff;
+    z-index: 99999;
+    /* background-color: #fff;  */
+    position: fixed;
+    transform: translate(-50% ,-50%);
+    mix-blend-mode: difference;
+}
+#batman h1:hover{
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
 }
