@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#main{
+    background-color: #151515;
+    position: relative;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #050505;
+    z-index: 999;
+    position: fixed;
+    color: white;
+    padding: 15vw 10vw; 
+    
+}
+.line{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4vw;
+}
+.line h1{
+    font-weight: 500;
+    font-size: 6.5vw;
+    font-family: 'plain light';
+    text-transform: uppercase;   
+}
+#line-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+#line-part1 h5,#line-part1 h6{
+    font-size: 3vw;
+    font-family: 'silk serif';
+    font-weight: 100;
+}
+
+#line-part1 h5{
+    width: 5vw;
+    text-align: right;
+}
+#now{
+    margin-right: -5px;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 500;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+    10%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 0;
+    }
+    30%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        opacity: 1;
+    }
+    40%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: black;
+        opacity: 0;
+    }
+    60%{
+        font-family: 'Times New Roman', Times, serif;
+        -webkit-text-stroke: 1px solid #fff;
+        color: white;
+        opacity: 1;
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: black;
+        opacity: 0;
+    }
+}
